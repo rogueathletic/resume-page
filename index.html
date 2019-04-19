@@ -37,7 +37,7 @@
 #name {
   margin: 5vh 0 0 -20px;
 position: fixed;
-color: silver;
+color: rgb(214, 211, 211);
 
     /* display:block;
     justify-content: center; */
@@ -50,7 +50,7 @@ color: silver;
 }
 
 #named-letters {
-  margin: 40px 0 0 0;
+  margin: 33px 0 0 0;
 }
 
 @media only screen and (max-width: 600px) {
@@ -60,10 +60,47 @@ color: silver;
   }
 }
 
-#hr {
-    width:92vw;
-     margin: 4vh 0 0 4vw;
+#line-break{ 
+    display:block;
+    border:none;
+    height:1px;
+    background: linear-gradient(90deg, transparent, white, silver, grey, darkslategray, black, darkslategray, grey, silver, white, transparent )
 }
+
+#line-break:hover{ 
+    background: linear-gradient(90deg, silver, grey, darkslategray, black, darkslategray, grey, silver );
+    padding: 10px 0 10px 0;
+}
+
+#hr {
+    width:16vw!important;
+     margin: 4vh 0 0 12vw;
+}
+
+@media only screen and (max-width: 600px) {
+  #hr {
+    width:70vw!important;
+     margin: 4vh 0 0 12vw;
+  }
+}
+
+h3 {
+    text-align: center;
+    letter-spacing: 1vw;
+    color: silver;
+}
+
+h4 {
+  color: grey;
+margin: 0 0 0 16vw;
+}
+
+h5 {
+  color: darkslategray;
+  margin: 0 0 0 60px;
+}
+
+
 
 #location {
     text-align: center;
@@ -79,23 +116,26 @@ color: silver;
     margin: 0 0 0 70vh;
 }
 
-h3 {
-    text-align: center;
-    letter-spacing: 1vw;
-    color: silver;
-}
-
 .fa-copy,
 .fa-laptop-code,
 .fa-black-tie,
 .fas,
 .far,
-.fa-chalkboard-teacher {
-    color: grey!important;
+.fa-chalkboard-teacher,
+.fa-life-ring,
+.fa-flag-usa,
+.fa-university,
+.project-diagram,
+.fa-project-diagram {
+    color: silver!important;
 }
 
-#consultant title {
+#consultant-title,
+#fireman-title,
+#education-title,
+#title-style {
     font-weight: bolder;
+    color: rgb(97, 96, 96);
 }
 
 #letters-of {
@@ -109,6 +149,10 @@ left: 0;
 bottom: 0;
 text-align: center;
 color: rgb(230, 227, 227);
+}
+
+#awards-text {
+  font-size: 12px;
 }
 
  </style>
@@ -161,18 +205,20 @@ color: rgb(230, 227, 227);
             </div>
             <p class="lead" id="location">Oceanside,CA | 714-916-8783 | Jason@skunkworksweb.io</p>
 
-            <hr class="my-2">
             <br>
-            <br>
+            <span id="line-break"></span>
+        <br>
             <h3>P R O F I L E</h3>
             <br>
-            <h5>Professional Summary</h5>
-                <p id="summary">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Increasing responsibility in consumer brand management, marketing, operational-logistics, sales, and product development roles within manufacturing, wholesale and retail organizations.  This includes work as a key contributor in the development and refinement of brand identity to improve overall market penetration with a focus on the value proposition for customers. Extensive experience marketing and promoting the value proposition of niche products in both existing and developing markets with a focus on clear understanding of market analytics, dynamics and the need for collaborative development between product marketing, sales, and development forces.
+
+                <p id="summary">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Increasing responsibility in consumer brand management, marketing, operational-logistics, sales, and product development roles within manufacturing, wholesale and retail organizations.  This includes work as a key contributor in the development and refinement of brand identity to improve overall market penetration with a focus on the value proposition for customers. Extensive experience marketing and promoting the value proposition of niche products in both existing and developing markets with a focus on clear understanding of market analytics, dynamics and the need for collaborative development between product marketing, sales, and development forces.
                <br>
                <br>
                Strong work ethic; enjoys applying analytic, organizational, and communication skills to help the team perform at its highest level. Actively searching for a position within a marketing or brand management department where I can put my talents to use. 
                 </p>
-<hr>
+                <br>
+                <span id="line-break"></span>
+            <br>
 <h5>W E B &nbsp; D E V E L O P M E N T <i class="fas fa-laptop-code"></i></h5>
 <br>
 <div class="container">
@@ -206,8 +252,9 @@ color: rgb(230, 227, 227);
           </div>
         </div>
       </div>
-
-      <hr>
+<br>
+          <span id="line-break"></span>
+          <br>
 <h5>B R A N D I N G &nbsp; C O M P E T I C I E S <i class="far fa-copy"></i></h5>
 <br>
 <div class="container">
@@ -242,22 +289,22 @@ color: rgb(230, 227, 227);
         </div>
       </div>
 <br>
-<hr>
+    <span id="line-break"></span>
 <br>
       <h3>E X P E R E N C E</h3>
       <br>
-      <h5>Professional Summary <i class="fab fa-black-tie"></i></h5>
-          <p id="summary">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Increasing responsibility in consumer brand management, marketing, operational-logistics, sales, and product development roles within manufacturing, wholesale and retail organizations.  This includes work as a key contributor in the development and refinement of brand identity to improve overall market penetration with a focus on the value proposition for customers. Extensive experience marketing and promoting the value proposition of niche products in both existing and developing markets with a focus on clear understanding of market analytics, dynamics and the need for collaborative development between product marketing, sales, and development forces.
+      <h5>P R O F E S S I O N A L &nbsp; S U M M A R Y <i class="fab fa-black-tie"></i></h5>
+          <p id="summary">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Increasing responsibility in consumer brand management, marketing, operational-logistics, sales, and product development roles within manufacturing, wholesale and retail organizations.  This includes work as a key contributor in the development and refinement of brand identity to improve overall market penetration with a focus on the value proposition for customers. Extensive experience marketing and promoting the value proposition of niche products in both existing and developing markets with a focus on clear understanding of market analytics, dynamics and the need for collaborative development between product marketing, sales, and development forces.
          <br>
          <br>
          Strong work ethic; enjoys applying analytic, organizational, and communication skills to help the team perform at its highest level. Actively searching for a position within a marketing or brand management department where I can put my talents to use. 
           </p>
           <br>
           <br>
-          <span id="consultant title"><b>May 2010&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Independent Consultant</b></span><br>
-          <span id="consultant title"><b>Current</b></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><b>FRONT END WEB DEVELOPMENT</b> | Marketing | Branding | E-Commerce | Sales Channel
+          <span id="consultant-title"><b>May 2010&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Independent Consultant</b></span><br>
+          <span id="consultant-title"><b id="title-style">Current</b></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><b id="title-style">FRONT END WEB DEVELOPMENT</b><span id="ocnsultant-bullets">| Marketing | Branding | E-Commerce | Sales Channel <hr>
           	Extensive consulting experience in front web development, marketing, branding, rebranding, and brand management for Manufactures, Retailers, Resellers, finance, Sporting goods, 
-          Etc and so on</span>
+          Etc and so on</span><br>
           <div class="container">
                 <div class="row">
                   <div class="col-sm">
@@ -290,9 +337,11 @@ color: rgb(230, 227, 227);
                 </div>
               </div>
               <br>
+              <!-- <hr>
+              <hr> -->
               <br>
-              <span id="consultant title"><b>May 2010&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Independent Consultant</b></span><br>
-              <span id="consultant title"><b>Current</b></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><b>FRONT END WEB DEVELOPMENT</b> | Marketing | Branding | E-Commerce | Sales Channel
+              <span id="consultant-title"><b>Apr 2004&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;United States Coast Guard</b> <i class="fas fa-life-ring"></i> <i class="fas fa-flag-usa"></i></span><br>
+              <span id="consultant-title"><b>May 2008</b></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><b id="title-style">FIREMAN</b> | Marketing | Branding | E-Commerce | Sales Channel <hr>
                   Extensive consulting experience in front web development, marketing, branding, rebranding, and brand management for Manufactures, Retailers, Resellers, finance, Sporting goods, 
               Etc and so on</span>
               <div class="container">
@@ -327,19 +376,20 @@ color: rgb(230, 227, 227);
                     </div>
                   </div>
                   <br>
-                  <hr><br>
+                  <span id="line-break"></span>
+              <br>
                   <h3>E D U C A T I O N</h3>
                   <br>
-                  <h5>Professional Summary <i class="fas fa-chalkboard-teacher"></i></h5>
-                      <p id="summary">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Increasing responsibility in consumer brand management, marketing, operational-logistics, sales, and product development roles within manufacturing, wholesale and retail organizations.  This includes work as a key contributor in the development and refinement of brand identity to improve overall market penetration with a focus on the value proposition for customers. Extensive experience marketing and promoting the value proposition of niche products in both existing and developing markets with a focus on clear understanding of market analytics, dynamics and the need for collaborative development between product marketing, sales, and development forces.
+                  <h5>S U M M A R Y <i class="fas fa-university"></i> <i class="fas fa-chalkboard-teacher"></i></h5><br>
+                      <p id="summary">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Increasing responsibility in consumer brand management, marketing, operational-logistics, sales, and product development roles within manufacturing, wholesale and retail organizations.  This includes work as a key contributor in the development and refinement of brand identity to improve overall market penetration with a focus on the value proposition for customers. Extensive experience marketing and promoting the value proposition of niche products in both existing and developing markets with a focus on clear understanding of market analytics, dynamics and the need for collaborative development between product marketing, sales, and development forces.
                      <br>
                      <br>
                      Strong work ethic; enjoys applying analytic, organizational, and communication skills to help the team perform at its highest level. Actively searching for a position within a marketing or brand management department where I can put my talents to use. 
                       </p>
                       <br>
                       <br>
-                      <span id="consultant title"><b>May 2010&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Full Stack Web Development</b></span><br>
-                      <span id="consultant title"><b>Current</b></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><b>University of California San Diego</b> | Marketing | Branding | E-Commerce | Sales Channel
+                      <span id="education-title"><b>Oct 2018&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Full Stack Web Development</b> <i class="fas fa-university"></i> <i class="fas fa-laptop-code"> </i></span><br>
+                      <span id="education-title-title"><b id="title-style">May 2019</b></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><b id="title-style">University of California San Diego</b> | Marketing | Branding | E-Commerce | Sales Channel
                           Extensive consulting experience in front web development, marketing, branding, rebranding, and brand management for Manufactures, Retailers, Resellers, finance, Sporting goods, 
                       Etc and so on</span>
                       <div class="container">
@@ -376,8 +426,8 @@ color: rgb(230, 227, 227);
 
 <br>
 <br>
-<span id="consultant title"><b>May 2010&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Independent Consultant</b></span><br>
-<span id="consultant title"><b>Current</b></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><b>FRONT END WEB DEVELOPMENT</b> | Marketing | Branding | E-Commerce | Sales Channel
+<span id="consultant-title"><b>May 2010&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Golden West College</b> <i class="fas fa-university"></i> <i class="fas fa-project-diagram"></i> </span><br>
+<span id="consultant-title"><b>Current</b></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><b id="title-style">FRONT END WEB DEVELOPMENT</b> | Marketing | Branding | E-Commerce | Sales Channel
     Extensive consulting experience in front web development, marketing, branding, rebranding, and brand management for Manufactures, Retailers, Resellers, finance, Sporting goods, 
 Etc and so on</span>
 <div class="container">
@@ -411,9 +461,44 @@ Etc and so on</span>
         </div>
       </div>
     </div>
+
+        <hr id="hr">
     <br>
-    <hr>
-    <br>
+          <h4>A W W A R D S</h4>
+          <br>
+          <div class="container">
+                <div class="row">
+                  <div class="col-sm">
+                      <ul>
+                        <li id="awards-text">Commandant letter of commendation</li>
+                        <li id="awards-text">Meritorious Team Commination</li>
+                    </ul>
+                  </div>
+                  <div class="col-sm">
+                      <ul>
+                        <li id="awards-text">Presidential Unit Citation</li>
+                        <li id="awards-text">National Defense Service Medal</li>
+                        </ul>
+                  </div>
+                  <div class="col-sm">
+                      <ul>
+                        <li id="awards-text">Coast Guard Good Conduct Medal</li>
+                        <li id="awards-text">Pistol Marksman Commendation</li>
+                        <ul>
+                  </div>
+                  <div class="col-sm">
+                      <ul>
+                          <li id="awards-text">Coast Guard Sea Service Ribbon</li>
+                        <li id="awards-text">Honorable Early Retirement </li>
+
+                        <ul>
+                  </div>
+                </div>
+              </div>
+             
+                        <br>
+                            <span id="line-break"></span>
+                        <br>
           <h3>A F F I L I A T I O N S</h3>
           <br>
           <div class="container">
@@ -448,7 +533,7 @@ Etc and so on</span>
                 </div>
               </div>
               <br>
-              <hr>
+                  <span id="line-break"></span>
               <br>
                     <h3>S O F T W A R E</h3>
                     <br>
