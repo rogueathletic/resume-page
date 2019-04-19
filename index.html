@@ -18,15 +18,46 @@
      width:92vw;
      margin: 4vw 0 0 4vw;
      border-radius: 5px 5px 25px 5px;
-     box-shadow: 2px 2px 10px grey;
-     
+ }
+
+ #name-title {
+   text-align: center;
+   font-size: 38px;
+   color: grey;
+   letter-spacing: 27px;
+ }
+
+ #resume-word {
+   text-align: center;
+   color: silver;
+   letter-spacing: 25px;
+   margin: 0 0 50px 0;
  }
 
 #name {
-    letter-spacing: 3vh;
+  margin: 5vh 0 0 -20px;
+position: fixed;
+color: silver;
 
-    font-size: 40px;
-    text-align: center;
+    /* display:block;
+    justify-content: center; */
+}
+
+@media only screen and (max-width: 600px) {
+  #name {
+    margin: -35vh 0 0 -12px;
+  }
+}
+
+#named-letters {
+  margin: 40px 0 0 0;
+}
+
+@media only screen and (max-width: 600px) {
+  #named-letters {
+    margin: .3vh 0 0 0;
+    color: rgb(223, 219, 219);
+  }
 }
 
 #hr {
@@ -96,22 +127,39 @@ color: rgb(230, 227, 227);
     </nav>  
     <div class="jumbotron jumbotron-fluid" id="jumbotron">
         <div class="container">
-            <p id="name">
-<span>J</span>
-<span>A</span>
-<span>S</span>
-<span>O</span>
-<span>N</span>
-<span>&nbsp;</span>
-<span>S</span>
-<span>C</span>
-<span>H</span>
-<span>U</span>
-<span>T</span>
-<span>Z</span>
+          <!-- header title name -->
+<p id="name-title">
+            <span>J</span>
+            <span>A</span>
+            <span>S</span>
+            <span>O</span>
+            <span>N</span>
+            <span>&nbsp;</span>
+            <span>S</span>
+            <span>C</span>
+            <span>H</span>
+            <span>U</span>
+            <span>T</span>
+            <span>Z</span>
+          </p>
+<p id="resume-word">R E S U M E</p>
+                    <!-- scrolling name -->
+            <div id="name">
+<div id="named-letters">J</div>
+<div id="named-letters">A</div>
+<div id="named-letters">S</div>
+<div id="named-letters">O</div>
+<div id="named-letters">N</div>
+<div id="named-letters">&nbsp;</div>
+<div id="named-letters">S</div>
+<div id="named-letters">C</div>
+<div id="named-letters">H</div>
+<div id="named-letters">U</div>
+<div id="named-letters">T</div>
+<div id="named-letters">Z</div>
 
-            </p>
-            <p class="lead" id="location">Oceanside, CA | 714-916-8783 | Jason@skunkworksweb.io</p>
+            </div>
+            <p class="lead" id="location">Oceanside,CA | 714-916-8783 | Jason@skunkworksweb.io</p>
 
             <hr class="my-2">
             <br>
@@ -440,11 +488,19 @@ Etc and so on</span>
         <p id="letters-of"> Letters of refference available upon request</p>
         <br><br>
 <p id="footer">Jason Robert Schutz 2019</p>
-    <!-- Optional JavaScript -->
+    <!-- jquery - JavaScript -->
+    <script
+  src="https://code.jquery.com/jquery-3.4.0.js"
+  integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="
+  crossorigin="anonymous"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+
+    <script rel="javascript">
+    
+    </script>
   </body>
 </html>
