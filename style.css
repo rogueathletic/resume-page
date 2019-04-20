@@ -1,0 +1,291 @@
+
+* {
+   font-family: 'Montserrat', sans-serif;
+   outline: none!important;
+}
+
+#jumbotron {
+width:92vw;
+margin: 4vw 0 0 4vw;
+border-radius: 5px 5px 25px 5px;
+overflow-y: scroll;
+padding: 10px;
+}
+
+#name-title {
+text-align: center;
+font-size: 38px;
+color: grey;
+letter-spacing: 27px;
+}
+@media only screen and (max-width: 1050px) {
+    #name-title {
+        font-size: 30px;
+        color: grey;
+        letter-spacing: 20px;
+    }
+    }
+
+#resume-word {
+text-align: center;
+color: silver;
+letter-spacing: 25px;
+margin: 0 0 50px 0;
+}
+
+#name {
+margin: -138px 0 0 -20px;
+position: fixed;
+color: rgb(214, 211, 211);
+}
+
+@media only screen and (max-width: 1050px) {
+    #name {
+    margin: -10vh 0 0 -18px;
+    }
+    }
+
+@media only screen and (max-width: 600px) {
+#name {
+margin: -35vh 0 0 -12px;
+}
+}
+
+#named-letters {
+margin: 20px 0 20px 0;
+}
+
+@media only screen and (max-width: 1050px) {
+    #named-letters {
+    margin: 0px 0 5px 0;
+    color: rgb(223, 219, 219);
+    }
+    }
+
+@media only screen and (max-width: 600px) {
+#named-letters {
+margin: 10px 0 10px 0;
+color: rgb(223, 219, 219);
+}
+}
+
+#line-break{ 
+display:block;
+border:none;
+height:1px;
+background: linear-gradient(90deg, transparent, white, silver, grey, darkslategray, black, darkslategray, grey, silver, white, transparent )
+}
+
+#line-break:hover{ 
+background: linear-gradient(90deg, silver, grey, darkslategray, black, darkslategray, grey, silver );
+height:1px! important;
+}
+
+#hr {
+width:16vw!important;
+/* margin: 4vh 0 0 24vw; */
+}
+
+@media only screen and (max-width: 600px) {
+#hr {
+width:70vw!important;
+margin: 4vh 0 0 12vw;
+}
+}
+
+h3 {
+text-align: center;
+letter-spacing: 1vw;
+color: silver;
+}
+
+h4 {
+color: grey;
+text-align: center!important;
+}
+
+h5 {
+color: darkslategray;
+margin: 0 0 0 60px;
+}
+
+#centerer {
+    text-align: center!important;   
+}
+
+#location {
+text-align: center;
+word-spacing: 4vw;
+color: grey;
+}
+
+#summary {
+text-align: justify;
+}
+
+#navigation-bar {
+margin: 0 0 0 50vh;
+position: sticky;
+}
+
+.btn-link {
+    color: grey!important;
+    
+}
+
+#resume-list-items {
+    margin: 0 0 0 20px;
+    color: darkslategray!important;
+}
+
+#resume-list-items:hover {
+    color: grey!important;
+}
+
+#resume-list-items:active {
+    color: #33cccc!important;
+}
+
+
+.fas,
+.far,
+.fa-copy,
+.fa-github,
+.fa-strava,
+.fa-jsfiddle,
+.fa-envelope,
+.fa-file-pdf,
+.fa-flag-usa,
+.fa-black-tie,
+.fa-life-ring,
+.fa-file-word,
+.fa-file-code,
+.fa-university,
+.fa-laptop-code,
+.fa-linkedin-in,
+.fa-comment-dots,
+.project-diagram,
+.fa-project-diagram,
+.fa-chalkboard-teacher {
+color: silver!important;
+}
+
+
+.fas:active,
+.far:active,
+.fa-copy:active,
+.fa-github:active,
+.fa-strava:active,
+.fa-jsfiddle:active,
+.fa-envelope:active,
+.fa-file-pdf:active,
+.fa-flag-usa:active,
+.fa-black-tie:active,
+.fa-life-ring:active,
+.fa-file-word:active,
+.fa-file-code:active,
+.fa-university:active,
+.fa-laptop-code:active,
+.fa-linkedin-in:active,
+.fa-comment-dots:active,
+.project-diagram:active,
+.fa-project-diagram:active,
+.fa-chalkboard-teacher:active,
+button:active {
+    background-color: #000000a9!important;
+    color: whitesmoke!important;
+}
+
+#exit {
+font-weight: 300;
+font-size: 13px;
+}
+
+.modal,
+.exampleModal {
+    background: url(./5.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    transition-delay: 300ms;
+}
+
+#exit:active,
+.close:active {
+    background-color: red!important;
+    border-radius: 0px 5px 0px 15px;
+
+}
+
+.fab:active,
+.fas:active,
+.far:active {
+size: 0.8;
+}
+
+#consultant-title,
+#fireman-title,
+#education-title,
+#title-style {
+font-weight: bolder;
+color: rgb(97, 96, 96);
+}
+
+#letters-of {
+text-align: center;
+color: rgb(206, 203, 203);
+padding: -40px 0 -40px 0;
+}
+
+#footer {
+left: 0;
+bottom: 0;
+text-align: center;
+color: rgb(230, 227, 227);
+}
+
+#awards-text {
+font-size: 12px;
+}
+
+
+#download-btn {
+position:sticky!important;
+background-color:rgba(192, 192, 192, 0.198);
+left: 5px;
+bottom:5px;
+margin-left: 5px;
+color: rgba(47, 79, 79, 0.472);
+border-radius: 13px 13px 13px 0px;
+}
+
+#download-btn:hover {
+    color: rgba(47, 79, 79, 0.76);
+    outline: none!important;
+    
+
+}
+
+#right-bullets {
+    text-align: right;
+}
+
+#center-bullets {
+    text-align: center;
+}
+
+li,
+ul {
+    list-style-type: none;
+}
+#modal-icons {
+    margin: 0 0 0 0!important;
+}
+
+#modal-text {
+    text-align: justify;
+    color: rgb(91, 91, 91);
+    text-indent: 25px;
+}
+
