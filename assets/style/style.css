@@ -251,8 +251,9 @@ font-size: 12px;
 
 
 #download-btn {
-position:sticky!important;
+position:fixed!important;
 background-color:rgba(192, 192, 192, 0.198);
+z-index: 99999;
 left: 5px;
 bottom:5px;
 margin-left: 5px;
@@ -289,3 +290,6 @@ ul {
     text-indent: 25px;
 }
 
+.container {
+    max-width: 88vw; 
+}
