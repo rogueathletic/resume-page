@@ -35,24 +35,8 @@
     <nav class="navbar navbar-expand navbar-light bg-light"> 
         <div class="nav navbar-nav" id="navigation-bar">
 <!-- Default dropleft button -->
-<div class="btn-group dropleft">
-    <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Resume
-    </button>
-    <div class="dropdown-menu">
-      <a href="#overview" id="resume-list-items" alt="Jason Schutz Resume Overview">Overview</a><br>
-      <a href="#proficiencies" id="resume-list-items" alt=" link to my professional proficiencies">Proficiencies</a><br>
-      <a href="#experence" id="resume-list-items" alt="link to overview of my professional experences">Experience</a><br>
-      <a href="#education" id="resume-list-items" alt="link to my education history">Education</a><br>
-      <a href="#affiliations" id="resume-list-items" alt="link to organizations im affiliated with">Affiliations</a><br>
-      <a href="#software" id="resume-list-items" alt="link to softward im proficent in">Software</a><br>
-    </div>
-  </div> 
-            <a class="nav-item nav-link" href="mailto:jason@skunkworksweb.io"> Emal </a>
-            <a class="nav-item nav-link" href="tel:17149168783"> Call </a> 
-            <a class="nav-item nav-link" href="sms:17149168783"> Text </a>
-            <a class="nav-item nav-link" href="https://skunkworksweb.io" target="_blank"> Portfolio</a>  
-        </div>
+
+ 
     </nav>  
     <div class="jumbotron jumbotron-fluid" id="jumbotron">
         <div class="container" id="body-container">
@@ -386,7 +370,7 @@
                 </div>
               </div>
             </div>
-      
+
               <br>
                   <span id="line-break"></span>
               <br>
@@ -451,12 +435,15 @@
                         </div>
                     </div>
         </div>
+
+ 
         <p id="letters-of"> Letters of refference available upon request <a href="mailto:jason@skunkworksweb.io?subject=Request for letters of refference!&body=Hello,">HERE</a></p>
         <br>
 <!-- Button trigger modal -->
 <button type="button"  class="btn btn-info no-print" data-toggle="modal"  data-target="#exampleModal" id="download-btn">
     <i class="fas fa-download"></i>
 </button>
+
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -469,21 +456,20 @@
         </button>
       </div>
       <div class="modal-body" id="modal-text">
-       Select any of the buttons below to download the reume in diferent formats, review curent works or simply connect.
+       Select any of the buttons below to download the reume in the file format that suits your use.
       </div>
       <div class="modal-footer">
         <div id="modal-icons">
-        <button type="button" class="btn btn-light" data-dismiss="modal"><i class="far fa-file-pdf"></i></a></button>
-        <button type="button" class="btn btn-light"><a href="/"><i class="far fa-file-word"></i></a></button>
-        <button type="button" class="btn btn-light"><a href="/"><i class="fab fa-linkedin-in"></a></i></button>
-        <button type="button" class="btn btn-light"><a href="/"><i class="fab fa-github"></i></a></button>
-        <button type="button" class="btn btn-light"><a href="/"><i class="fab fa-jsfiddle"></i></a></button>
-        <button type="button" class="btn btn-light"><a href="/"><i class="far fa-envelope"></i></a></button>
-        <button type="button" class="btn btn-light"><a href="/"><i class="fab fa-strava"></i></a></button>
-        <button type="button" class="btn btn-light"><a href="/"><i class="far fa-comment-dots"></i></a></button>
-        <button type="button" class="btn btn-light"><a href="/"><i class="fas fa-laptop-code"></i></a></button>
-        <button type="button" class="btn btn-light"><a href="/"><i class="far fa-file-code"></i></a></button>
+        <button type="button" class="btn" data-dismiss="modal"></a></button>
+        <button type="button" id="download-btn1" alt="resume download dormatted in word" class="btn"><p id="dwnld-btn-txt" download>.doc</p><a href="./assets/resumes/jasonSchutzResume2019.docx" download="jasonSchutzResume2019.docx"></a></button>
+
+        <button type="button" id="download-btn2" alt="resume download dormatted in pdf" class="btn"><p id="dwnld-btn-txt">.pdf</p><a href="./assets/resumes/jasonSchutzResume2019.pdf"></a></button>
+        <button type="button" id="download-btn3" alt="resume download dormatted in raw txt" class="btn"><p id="dwnld-btn-txt">.txt</p><a href="./assets/resumes/jasonSchutzResume2019.txt"></a></button>
+        <button type="button" id="download-btn1" alt="resume download dormatted in word" class="btn"><p id="dwnld-btn-txt-contact" download>Contact</p><a href="./assets/resumes/jasonSchutzResume2019.docx"></a></button>
+
 </div></div>
+
+<!-- Modal -->
 
 
 <p id="footer" class="no-print">Jason Robert Schutz 2019</p>
@@ -498,7 +484,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
 
-    <script rel="javascript">
+    <script rel="javascript" src="./assets/javascript/app.js">
     
     </script>
   </body>

@@ -352,3 +352,25 @@ ul {
   @page {
     margin: 5cm 0 0 0;
   }
+
+  #download-btn1,
+  #download-btn2,
+  #download-btn3 {
+      width: 100px;
+      height: 50px;
+      background-color: #33aeae;
+      float: left;
+      display: flex;
+      margin: 0 0 0 10px;
+ 
+  }
+
+  #dwnld-btn-txt {
+      text-align: center;
+      margin: 0 0 0 25px;
+  }
+
+  #dwnld-btn-txt-contact {
+    text-align: center;
+    margin: 0 0 0 5px;
+}
