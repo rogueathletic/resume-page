@@ -1,7 +1,8 @@
 
 * {
    font-family: 'Montserrat', sans-serif;
-   outline: none!important;
+   outline: rgba(255, 255, 255, 0.1)!important;
+   overflow-x: hidden;
 }
 
 #jumbotron {
@@ -9,22 +10,42 @@ width:92vw;
 margin: 4vw 0 0 4vw;
 border-radius: 5px 5px 25px 5px;
 overflow-y: scroll;
-padding: 10px;
+padding: 10px 10px 10px 10px
 }
 
 #name-title {
 text-align: center;
-font-size: 38px;
+font-size: 3vw;
 color: grey;
-letter-spacing: 27px;
+letter-spacing: 20px;
 }
 @media only screen and (max-width: 1050px) {
     #name-title {
-        font-size: 30px;
+        font-size: 3vw;
         color: grey;
         letter-spacing: 20px;
     }
     }
+
+    @media only screen and (max-width: 1000px) {
+        #name-title {
+            font-size: 5vw;
+            color: grey;
+            letter-spacing: 4px;
+        }
+        }
+
+        @media only screen and (max-width: 700px) {
+            nav
+
+             {
+            display: none!important;
+            height: 0px!important;
+            width: 0px!important;
+            color: transparent!important;
+            background-color: transparent!important;
+            }
+            }
 
 #resume-word {
 text-align: center;
@@ -32,6 +53,12 @@ color: silver;
 letter-spacing: 25px;
 margin: 0 0 50px 0;
 }
+
+@media only screen and (max-width: 1000px) {
+    #resume-word {
+        letter-spacing: 4px;
+    }
+    }
 
 #name {
 margin: -138px 0 0 -20px;
@@ -203,7 +230,7 @@ font-size: 13px;
 
 .modal,
 .exampleModal {
-    background: url(./5.png) no-repeat center center fixed; 
+    background: url(../images/5.png) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -256,7 +283,7 @@ background-color:rgba(192, 192, 192, 0.198);
 z-index: 99999;
 left: 5px;
 bottom:5px;
-margin-left: 5px;
+margin: 0 0 15px 5px;
 color: rgba(47, 79, 79, 0.472);
 border-radius: 13px 13px 13px 0px;
 }
@@ -293,3 +320,35 @@ ul {
 .container {
     max-width: 88vw; 
 }
+
+
+
+#languages {
+    font-size: 12px;
+}
+
+@media print
+{    
+    .no-print, .no-print *
+    {
+        display: none !important;
+    }
+}
+
+#breaker {
+    page-break-after: always!important;
+}
+
+  #experence,
+  #education {
+    page-break-before: always!important;
+    content: "<br><br><br><br><br><br> " counter(page) " of " counter(pages);
+  }
+
+  @page :first {
+    margin: 10cm 0 0 0;
+  }
+
+  @page {
+    margin: 5cm 0 0 0;
+  }
