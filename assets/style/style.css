@@ -230,12 +230,13 @@ font-size: 13px;
 
 .modal,
 .exampleModal {
-    background: url(../images/5.png) no-repeat center center fixed; 
+    background-color: rgba(0, 0, 0, 0.4);
+    /* background: url(../images/5.png) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
-    transition-delay: 300ms;
+    background-size: cover; */
+    transition-delay: 225ms;
 }
 
 #exit:active,
