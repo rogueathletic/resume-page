@@ -1,0 +1,34 @@
+{
+  "name": "resume-cv-2020",
+  "version": "1.0.0",
+  "description": "Digital professional print resume by Jason Schutz",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rogueathletic/resume-page.git"
+  },
+  "keywords": [
+    "Jason",
+    "Schutz",
+    "Resume",
+    "Developer",
+    "Lead",
+    "Developer",
+    "Front",
+    "End",
+    "Developer",
+    "Frontend",
+    "Designer",
+    "Digital",
+    "Designer"
+  ],
+  "author": "Jason Schutz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rogueathletic/resume-page/issues"
+  },
+  "homepage": "https://github.com/rogueathletic/resume-page#readme"
+}
