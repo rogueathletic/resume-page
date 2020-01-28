@@ -18,18 +18,18 @@ body {
     color: #757575;
     padding-left: 15px;
     padding-right: 15px;
+
+
 }
 
 main {
+    position: relative;
     display: flexbox;
     max-width: 1100px;
     margin: 75px auto 160px;
     padding: auto 15px;
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
+    overflow: none;
+    max-height: 60vh;
 }
 
 nav.container {
@@ -73,10 +73,6 @@ div.aditional>div.education>ul>li:nth-child(2) {
     text-align: right;
 }
 
-
-/* Headings
-     ========================================================================== */
-
 h2 {
     font-size: 1.5em;
 
@@ -88,8 +84,6 @@ h2[center] {
 }
 
 
-/* Table
-     ========================================================================== */
 table {
     border-collapse: collapse;
     margin: 60px 15px;
@@ -116,8 +110,6 @@ table tr td.scope {
     text-align: left;
     font-weight: 600;
 }
-
-/* Table End */
 
 
 .grid-container {
@@ -166,7 +158,6 @@ sup {
     font-weight: 400;
 }
 
-
 .line-break {
     display: block;
     border: none;
@@ -176,19 +167,17 @@ sup {
     background: linear-gradient(90deg, transparent, white, silver, grey, rgb(107, 134, 134), black, darkslategray, grey, silver, white, transparent)
 }
 
-
 .date[colspan^="3"] {
     color: #808080;
     font-size: small;
     text-align: left;
 }
 
-
 /***************
 @Media Queries Begin
 ***************/
 
-@media only screen and (max-width: 1600px) and (min-width: 1025px) {}
+/* @media only screen and (max-width: 1600px) and (min-width: 1025px) {} */
 
 @media only screen and (max-width: 1024px) and (min-width: 500px) {
     h2 {
@@ -196,4 +185,4 @@ sup {
     }
 }
 
-@media (max-width: 499px) {}
+/* @media (max-width: 499px) {} */
