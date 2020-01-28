@@ -56,23 +56,58 @@ main {
     /* box-shadow: 0 11px 15px -11px #000; */
 }
 
-/**
-   * Correct the font size and margin on `h1` elements within `section` and
-   * `article` contexts in Chrome, Firefox, and Safari.
-   */
+nav.container {
+    max-width: 1100px;
+    position: relative;
+    margin: 30px auto 0;
 
-h1 {
-    font-size: 2em;
-    margin: 0.67em 0;
 }
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding-inline-start: 0;
+    padding-top: 5px auto;
+    margin: 0;
+}
+
+main > div.education > ul > li:nth-child(1) {
+    font-weight: 600;
+    }
+
+main > div.education > ul > li:nth-child(2) {
+text-align: right;
+}
+
+nav.container ul:nth-child(-n+1) li div {
+    font-weight: 600;
+    font-size: 1.3em;
+    color: #7a7a7a;
+}
+
+nav.container ul:nth-child(n+2) li div {
+    font-weight: 600;
+    font-size: 1em;
+    letter-spacing: 1.05em;
+    line-height: 1.1em;
+}
+
+div.aditional > div.education > ul > li:nth-child(2) {
+text-align: right;
+}
+/* Headings */
+
+
+
 h2 {
     font-size: 1.5em;
-    padding-left: 15px;
+
+    margin: 0;
 }
 
-.summary {
-    text-align: justify;
-    margin: 15px;
+h2[center] {
+    text-align: center;
 }
 
 
@@ -81,7 +116,7 @@ h2 {
      table {
         border-collapse: collapse;
         margin: 60px 15px;
-    
+        width: 1000px;
     }
     
     table tr:first-of-type th:first-child {
@@ -93,10 +128,18 @@ h2 {
     }
     
     table tr td:nth-child(-n+1) {
-        font-weight: 400;
-        font-size: small;
-        color: green;
+        font-weight: 600;
+        /* font-size: small; */
+        width: 100px;
+        text-align: right;
+        padding-right: 5px;
     }
+
+    table tr td.scope {
+        text-align: left;
+        font-weight: 600;
+    }
+ 
     /* Table End */
 
 /* Grouping content
